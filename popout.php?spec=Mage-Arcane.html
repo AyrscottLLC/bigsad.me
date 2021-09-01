@@ -11,136 +11,37 @@ Copyright Ayrscott, LLC 2021
 -->
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
     <script>const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
     <script src="https://wow.zamimg.com/widgets/power.js"></script>
     <title>Mage-Arcane @ BigSad.Me :: All The Gear You Don't Have</title>
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
-</style>    
-    <link
-        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    />    
+html {
+    background-attachment: fixed;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgba(215, 215, 215, 1);
+    font-family: Bitter, Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #dfdfff;
+}
+
+.gearslot {
+    white-space: nowrap;
+}
+    </style>
 </head>
 <body>
 
-<div id="title">
-    <h1 class="classy">BigSad.Me : All The Gear You Don't Have</h1>
-</div>
-
-<div class="navbar" style="margin: auto;">
-    
-<div class="dropdown">
-        <button class="dropbtn">Misc
-        <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="https://seventyupgrades.com/">70 Upgrades</a>
-            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTjfLF5sJQdkpWCnbQQzFH-ALpDb8vyvPOC27u9U8DyXuVnbi0mYmXzJ9n-95Gk_MwEX4pYtfCTxn5B/pubhtml">Phase 1 EPV</a>
-            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRZe43kmwCozOehCabXaXG1mdefA9QvYwb7sHH0y-Ugn3EW3F8J20mKluivPv465A9u0P9VAWxf1yZC/pubhtml">Phase 2 EPV</a>
-            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR0E9V25isVv-QyqfV8yZVr7A3G_KE-yRDPp-TNgnXgqje0aV-zLqoWB3HccPnoaDid6rGc5aDUi_Tk/pubhtml">Phase 5 EPV</a>
-
-        </div>
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn">Druid
-        <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="view.php%3Fspec=Druid-Balance.html">Balance</a>
-            <a href="view.php%3Fspec=Druid-Feral.html">Feral</a>
-            <a href="view.php%3Fspec=Druid-Guardian.html">Guardian</a>
-        </div>
-    </div>
-    
-    <div class="dropdown">
-        <button class="dropbtn">Mage
-        <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="view.php%3Fspec=Mage-Fire.html">Fire</a>
-            <a href="view.php%3Fspec=Mage-Frost.html">Frost</a>
-            <a href="view.php%3Fspec=Mage-Arcane.html">Arcane</a>
-        </div>
-    </div>
-
-    <div class="dropdown">
-        <button class="dropbtn">Hunter
-        <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="view.php%3Fspec=Hunter-Beast&#32;Mastery.html">Beast Mastery</a>
-            <a href="view.php%3Fspec=Hunter-Survival.html">Survival</a>
-        </div>
-    </div>
-
-    <div class="dropdown">
-        <button class="dropbtn">Paladin
-        <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="view.php%3Fspec=Paladin-Protection.html">Protection</a>
-        </div>
-    </div>
-
-    <div class="dropdown">
-        <button class="dropbtn">Priest
-        <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="view.php%3Fspec=Priest-Shadow.html">Shadow</a>
-        </div>
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn">Rogue
-        <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="view.php%3Fspec=Rogue-Combat.html">Combat</a>
-        </div>
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn">Shaman
-        <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="view.php%3Fspec=Shaman-Elemental.html">Elemental</a>
-            <a href="view.php%3Fspec=Shaman-Enhancement.html">Enhancement</a>
-        </div>
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn">Warrior
-        <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="view.php%3Fspec=Warrior-Arms.html">Arms</a>
-            <a href="view.php%3Fspec=Warrior-Fury.html">Fury</a>
-        </div>
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn">Warlock
-        <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="view.php%3Fspec=-Destruction.html">Destruction</a>
-        </div>
-    </div>        
-</div>
-<div class="standard_body">
-    <div class="sb_content">
-        <!-- End header -->
-
-
-<h1 class="classy" style="padding: 0; margin: 0;">Mage-Arcane <a href="popout.php%3Fspec=Mage-Arcane.html"><i class="fas fa-external-link-alt"></i></a></h1>
+<h1><a href="view.php%3Fspec=Mage-Arcane.html">BigSad.Me : Mage-Arcane</a></h1>
 <span style="font-size: 0.8em;">
 Jump To :
-<a href="view.php%3Fspec=Mage-Arcane.html#1">Head</a> | <a href="view.php%3Fspec=Mage-Arcane.html#2">Neck</a> | <a href="view.php%3Fspec=Mage-Arcane.html#3">Shoulders</a> | <a href="view.php%3Fspec=Mage-Arcane.html#5">Chest</a> | <a href="view.php%3Fspec=Mage-Arcane.html#6">Belt</a> | <a href="view.php%3Fspec=Mage-Arcane.html#7">Legs</a> | <a href="view.php%3Fspec=Mage-Arcane.html#8">Feet</a> | <a href="view.php%3Fspec=Mage-Arcane.html#9">Bracers</a> | <a href="view.php%3Fspec=Mage-Arcane.html#10">Hands</a> | <a href="view.php%3Fspec=Mage-Arcane.html#11">Rings</a> | <a href="view.php%3Fspec=Mage-Arcane.html#13">Trinkets</a> | <a href="view.php%3Fspec=Mage-Arcane.html#15">Cloak</a> | <a href="view.php%3Fspec=Mage-Arcane.html#16">Mainhand</a> | <a href="view.php%3Fspec=Mage-Arcane.html#17">Offhand</a> | <a href="view.php%3Fspec=Mage-Arcane.html#18">Ranged/Relic</a></div>
-<div id="scroll_report">
-<table>
+<a href="popout.php%3Fspec=Mage-Arcane.html#1">Head</a> | <a href="popout.php%3Fspec=Mage-Arcane.html#2">Neck</a> | <a href="popout.php%3Fspec=Mage-Arcane.html#3">Shoulders</a> | <a href="popout.php%3Fspec=Mage-Arcane.html#5">Chest</a> | <a href="popout.php%3Fspec=Mage-Arcane.html#6">Belt</a> | <a href="popout.php%3Fspec=Mage-Arcane.html#7">Legs</a> | <a href="popout.php%3Fspec=Mage-Arcane.html#8">Feet</a> | <a href="popout.php%3Fspec=Mage-Arcane.html#9">Bracers</a> | <a href="popout.php%3Fspec=Mage-Arcane.html#10">Hands</a> | <a href="popout.php%3Fspec=Mage-Arcane.html#11">Rings</a> | <a href="popout.php%3Fspec=Mage-Arcane.html#13">Trinkets</a> | <a href="popout.php%3Fspec=Mage-Arcane.html#15">Cloak</a> | <a href="popout.php%3Fspec=Mage-Arcane.html#16">Mainhand</a> | <a href="popout.php%3Fspec=Mage-Arcane.html#17">Offhand</a> | <a href="popout.php%3Fspec=Mage-Arcane.html#18">Ranged/Relic</a></div>
+<table style="margin-top: 20px;">
 <tr><td class="gearslot" valign="top"><a name="1"><b>High King : Head</b></a><br><table>
 
 <tr>
@@ -16321,17 +16222,4 @@ Jump To :
 </tr>
 
 </table>
-</td></tr>            </table>
-        <div>
-    </div>
-</div>
-
-
-        <!-- Begin footer -->
-        <div id="footer">
-            <a href="https://ayrscott.com/"><i class="fas fa-dragon"></i></a>
-        </div>
-    </div>
-</div>
-</body>
-</html>
+</td></tr></table>
